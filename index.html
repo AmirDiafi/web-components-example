@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Components</title>
+    <style>
+        h3{
+            color: purple;
+            text-align: center;
+        }
+        p[slot="article"] {
+            margin: 5px 0
+        }
+        input {
+            background-color: orange;
+        }
+        span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h3>Web Components User Card</h3>
+    <input-file></input-file>
+    <input-file></input-file>
+    <input-file></input-file>
+    <custem-element name='Zaki Bensaid' avatar='images/one.jpg'>
+        <p slot="article">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <span slot="mail">zakibensiad@gmail.com</span>
+        <span slot="phone">+213-000-111-222</span>
+    </custem-element>
+    <custem-element name='Maria Bensaid' avatar='images/tow.jpg' slot='Lorem ipsum dolor sit amet consectetur adipisicing elit.'>
+        <p slot="article">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <span slot="mail">mariabensiad@gmail.com</span>
+        <span slot="phone">+213-333-444-555</span>
+    </custem-element>
+    <custem-element name='Lynn Bensaid' avatar='images/three.jpg' slot='Lorem ipsum dolor sit amet consectetur adipisicing elit.'>
+        <p slot="article">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <span slot="mail">lynnbensiad@gmail.com</span>
+        <span slot="phone">+213-666-777-888</span>
+    </custem-element>
+    <script src="app.js"></script>
+</body>
+</html>
